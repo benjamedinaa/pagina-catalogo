@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Registro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); }
+            100% { background: linear-gradient(135deg, #ACB6E5 0%, #74ebd5 100%); }
+        }
+
+        .container {
+            width: 400px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #74ebd5;
+            color: #666;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ACB6E5;
+            transform: scale(1.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        .social-links {
+            display: inline-block;
+            padding: 10px;
+            background: #74ebd5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .social-links:hover {
+            transform: scale(1.1);
+            background: #ACB6E5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>¡Registro Exitoso!</h2>
+        <p>Gracias por registrarte. Tus datos se han guardado correctamente.</p>
+        <a href="index.php" class="btn">Volver a Inicio</a>
+        <p>Si tienes alguna pregunta o problema, contáctanos a través de nuestro correo electrónico info@gmail.com</p>
+        <p>Síguenos en redes sociales:</p>
+        <ul>
+            <li><a class="social-links" href="https://www.facebook.com" target="_blank">
+                <img src="icons/bxl-facebook.svg"></a></li>
+            <li><a class="social-links" href="https://twitter.com" target="_blank">
+                <img src="icons/bxl-instagram.svg"></a></li>
+            <li><a class="social-links" href="https://www.instagram.com" target="_blank">
+                <img src="icons/bxl-twitter.svg"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
